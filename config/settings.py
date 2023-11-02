@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     # Apps
     'news.apps.NewsConfig',
     'auth_niu',
-    'profile',
+    'profile_',
 ]
 
 MIDDLEWARE = [
