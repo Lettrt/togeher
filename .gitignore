@@ -100,7 +100,13 @@ celerybeat-schedule.*
 .env 
 .venv 
 env/ 
+<<<<<<< HEAD
 venv/ 
+=======
+venv/
+env 
+venv
+>>>>>>> 371ee5f (apps news)
 ENV/ 
 env.bak/ 
 venv.bak/ 
@@ -134,4 +140,11 @@ GitHub.sublime-settings
 !.vscode/tasks.json 
 !.vscode/launch.json 
 !.vscode/extensions.json 
+<<<<<<< HEAD
 .history
+=======
+.history
+
+# Pycharm
+.idea
+>>>>>>> 371ee5f (apps news)
