@@ -11,7 +11,7 @@ urlpatterns = [
     # Apps
     path('api/v1/', include('news.urls')),
     path('api/v1/', include('auth_niu.urls')),
-    path('api/v1/', include('profile.urls')),
+    path('api/v1/', include('profile_.urls')),
 
     # Auth
     path('auth/', include('rest_framework.urls')),
