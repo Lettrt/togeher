@@ -34,16 +34,11 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'djoser',
     'drf_yasg',
-<<<<<<< HEAD
+
     'comments',
 
-=======
-<<<<<<< HEAD
-    'auth_niu'
-=======
-    'profile'
->>>>>>> 2ea47d21224b36527351d4869591f993552bf602
->>>>>>> aee7f101d9321dcce254a345420dea6e8732c8d7
+    'auth_niu',
+    'profile',
 ]
 
 MIDDLEWARE = [

@@ -24,23 +24,16 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-<<<<<<< HEAD
     path('updatecomment/', include('comments.urls')),
     
-=======
-<<<<<<< HEAD
     
     path('api/', include('auth_niu.urls')),
 
     path('auth_niu/', include('auth_niu.urls')),
-
-=======
     path('swagger<format>/', schema_view.without_ui(cache_timeout=0), name='schema-json'),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
-    path('api/profile/',views.PortfolioList.as_view(),),
->>>>>>> 2ea47d21224b36527351d4869591f993552bf602
->>>>>>> aee7f101d9321dcce254a345420dea6e8732c8d7
+    path('api/profile/',views.PortfolioList.as_view()),
 ]
 
 if settings.DEBUG:
