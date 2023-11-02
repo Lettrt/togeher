@@ -2,12 +2,10 @@ import os
 from datetime import timedelta
 
 from pathlib import Path
-<<<<<<< HEAD
+
 from datetime import timedelta
 
 from pathlib import Path
-=======
->>>>>>> fc555c4333b9af8bbd823aad2542b404a2e3c91b
 
 from django.conf import settings
 from dotenv import load_dotenv
@@ -53,26 +51,16 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'drf_yasg',
 
-<<<<<<< HEAD
+
     'comments',
 
-    'auth_niu',
-    'profile',
-
-    # Lib
-    'rest_framework',
-    'rest_framework.authtoken',
-    'rest_framework_simplejwt',
-    'drf_yasg',
-
     # Apps
     'news.apps.NewsConfig',
-=======
+
     # Apps
-    'news.apps.NewsConfig',
     'auth_niu',
     'profile_',
->>>>>>> fc555c4333b9af8bbd823aad2542b404a2e3c91b
+
 ]
 
 MIDDLEWARE = [
@@ -141,12 +129,6 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'ru'
 
-<<<<<<< HEAD
-TIME_ZONE = 'UTC'
-LANGUAGE_CODE = 'ru'
-
-=======
->>>>>>> fc555c4333b9af8bbd823aad2542b404a2e3c91b
 TIME_ZONE = 'Asia/Bishkek'
 
 USE_I18N = True
@@ -160,11 +142,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
-<<<<<<< HEAD
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
-=======
->>>>>>> fc555c4333b9af8bbd823aad2542b404a2e3c91b
 # User file
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
@@ -213,7 +193,7 @@ SIMPLE_JWT = {
     "SLIDING_TOKEN_OBTAIN_SERIALIZER": "rest_framework_simplejwt.serializers.TokenObtainSlidingSerializer",
     "SLIDING_TOKEN_REFRESH_SERIALIZER": "rest_framework_simplejwt.serializers.TokenRefreshSlidingSerializer",
 }
-<<<<<<< HEAD
+
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=5),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
@@ -254,15 +234,10 @@ SIMPLE_JWT = {
     "SLIDING_TOKEN_REFRESH_SERIALIZER": "rest_framework_simplejwt.serializers.TokenRefreshSlidingSerializer",
 }
 
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',
-=======
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAdminUser',
->>>>>>> fc555c4333b9af8bbd823aad2542b404a2e3c91b
+
     ],
 
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -270,8 +245,8 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> fc555c4333b9af8bbd823aad2542b404a2e3c91b
+
+
+
