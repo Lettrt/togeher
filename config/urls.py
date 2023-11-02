@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path,re_path
@@ -24,10 +24,18 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+<<<<<<< HEAD
+    
+    path('api/', include('auth_niu.urls')),
+
+    path('auth_niu/', include('auth_niu.urls')),
+
+=======
     path('swagger<format>/', schema_view.without_ui(cache_timeout=0), name='schema-json'),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
     path('api/profile/',views.PortfolioList.as_view(),),
+>>>>>>> 2ea47d21224b36527351d4869591f993552bf602
 ]
 
 if settings.DEBUG:
