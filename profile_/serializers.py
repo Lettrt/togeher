@@ -7,4 +7,5 @@ class ProfileSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Profile
-        fields=['news','username','comment']
+        fields=['news','username']
+        ref_name = 'odododod'
